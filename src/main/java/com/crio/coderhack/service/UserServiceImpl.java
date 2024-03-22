@@ -65,12 +65,12 @@ public class UserServiceImpl implements UserService {
             listOfBages = new ArrayList<>();
         }
 
-        if(score >=1 && score<30){
+        if(score >=1 && score<=30){
             if(!listOfBages.contains(BadgeConstants.CODE_NINJA)){
                 listOfBages.add(BadgeConstants.CODE_NINJA);
             }
         }
-        else if(score >=30 && score<60){
+        else if(score >30 && score<=60){
             if(!listOfBages.contains(BadgeConstants.CODE_CHAMP)){
                 listOfBages.add(BadgeConstants.CODE_CHAMP);
             }
